@@ -3,8 +3,12 @@
 	"name": "mce",
 	"patterns": [
 		{
+			"name": "keyword.operator.mce",
+			"match": "[&\\\\@`$]"
+		},
+		{
 			"name": "keyword.mce",
-			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|byte_array_of|int_array_of|long_array_of|list_of|compound_of|reference_of|function_of|apply|code_of|splice|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|code|type)"
+			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|code|type)"
 		},
 		{
 			"name": "string.quoted.double.mce",
