@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"name": "keyword.mce",
-			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|byte_array_of|int_array_of|long_array_of|list_of|compound_of|reference_of|function_of|apply|code_of|splice|union|end|intersection|any|boolean|byte|short|int|long|float|double|string|byte_array|int_array|long_array|list|compound|reference|function|code|type)"
+			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|byte_array_of|int_array_of|long_array_of|list_of|compound_of|reference_of|function_of|apply|code_of|splice|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|code|type)"
 		},
 		{
 			"name": "string.quoted.double.mce",
@@ -18,12 +18,34 @@
 			]
 		},
 		{
-			"name": "constant.numeric.mce",
-			"match": "[-+]?(?:0|[1-9][0-9]*)[bsl]?"
+			"match": "\\[([bil]);",
+			"captures": {
+				"1": {
+					"name": "support.type.mce"
+				}
+			}
 		},
 		{
-			"name": "constant.numeric.mce",
-			"match": "[-+]?(?:[0-9]+[.]?|[0-9]*[.][0-9]+)(?:e[-+]?[0-9]+)?[fd]?"
+			"match": "([-+]?(?:0|[1-9][0-9]*))([bsl]?)",
+			"captures": {
+				"1": {
+					"name": "constant.numeric.mce"
+				},
+				"2": {
+					"name": "support.type.mce"
+				}
+			}
+		},
+		{
+			"match": "([-+]?(?:[0-9]+[.]?|[0-9]*[.][0-9]+)(?:e[-+]?[0-9]+)?)([fd]?)",
+			"captures": {
+				"1": {
+					"name": "constant.numeric.mce"
+				},
+				"2": {
+					"name": "support.type.mce"
+				}
+			}
 		}
 	],
 	"scopeName": "source.mce"
