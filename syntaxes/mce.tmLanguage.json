@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mce",
+	"patterns": [
+		{
+			"name": "keyword.mce",
+			"match": "\\b(?:definition|hole|meta|definition|let|match|false|true|byte_array_of|int_array_of|long_array_of|list_of|compound_of|reference_of|function_of|apply|code_of|splice|union|intersection|boolean|byte|short|int|long|float|double|string|byte_array|int_array|long_array|list|compound|reference|function|code|type)"
+		},
+		{
+			"name": "string.quoted.double.mce",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mce",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.mce",
+			"match": "[-+]?(?:0|[1-9][0-9]*)[bsl]?"
+		},
+		{
+			"name": "constant.numeric.mce",
+			"match": "[-+]?(?:[0-9]+[.]?|[0-9]*[.][0-9]+)(?:e[-+]?[0-9]+)?[fd]?"
+		}
+	],
+	"scopeName": "source.mce"
+}

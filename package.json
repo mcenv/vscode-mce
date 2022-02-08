@@ -1,0 +1,31 @@
+{
+    "name": "vscode-mce",
+    "displayName": "",
+    "description": "",
+    "version": "0.0.0",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [],
+    "contributes": {
+        "languages": [
+            {
+                "id": "mce",
+                "aliases": [
+                    "mce"
+                ],
+                "extensions": [
+                    ".mce"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "mce",
+                "scopeName": "source.mce",
+                "path": "./syntaxes/mce.tmLanguage.json"
+            }
+        ]
+    }
+}
