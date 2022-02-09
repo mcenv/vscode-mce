@@ -8,7 +8,7 @@
 		},
 		{
 			"name": "keyword.mce",
-			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|code|type)"
+			"match": "\\b(?:import|definition|hole|meta|definition|let|match|false|true|thunk_of|force|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|thunk|code|type)\\b"
 		},
 		{
 			"name": "string.quoted.double.mce",
