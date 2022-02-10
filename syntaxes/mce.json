@@ -7,8 +7,16 @@
 			"match": "[&\\\\@~!`$]"
 		},
 		{
+			"name": "keyword.control.mce",
+			"match": "\\b(?:import|let|match)\\b"
+		},
+		{
+			"name": "support.type.mce",
+			"match": "\\b(?:union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|thunk|code|type)\\b"
+		},
+		{
 			"name": "keyword.mce",
-			"match": "\\b(?:import|definition|hole|meta|let|match|false|true|union|end|intersection|any|byte_array|int_array|long_array|boolean|byte|short|int|long|float|double|string|list|compound|reference|function|thunk|code|type)\\b"
+			"match": "\\b(?:definition|hole|meta|false|true)\\b"
 		},
 		{
 			"name": "string.quoted.double.mce",
