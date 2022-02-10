@@ -24,7 +24,7 @@
             {
                 "language": "mce",
                 "scopeName": "source.mce",
-                "path": "./syntaxes/mce.tmLanguage.json"
+                "path": "./syntaxes/mce.json"
             }
         ]
     }
