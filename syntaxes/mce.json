@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"name": "keyword.operator.mce",
-			"match": "[?&\\\\@~!`$]"
+			"match": "[_?&\\\\@~!`$]"
 		},
 		{
 			"name": "keyword.control.mce",
@@ -16,7 +16,7 @@
 		},
 		{
 			"name": "keyword.mce",
-			"match": "\\b(?:def|hole|meta|false|true|refl)\\b"
+			"match": "\\b(?:def|builtin|meta|false|true|refl)\\b"
 		},
 		{
 			"name": "string.quoted.double.mce",
