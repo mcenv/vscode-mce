@@ -1,64 +1,68 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "mce",
-	"patterns": [
-		{
-			"name": "keyword.operator.mce",
-			"match": "[#*≔⇒→≥≤:_?∈&λ@`$=]"
-		},
-		{
-			"name": "keyword.control.mce",
-			"match": "\\b(?:import|export|let|match)\\b"
-		},
-		{
-			"name": "support.type.mce",
-			"match": "\\b(?:union|end|intersection|any|byte_array|int_array|long_array|bool|byte|short|int|long|float|double|string|list|compound|box|ref|fun|code|type)\\b"
-		},
-		{
-			"name": "keyword.mce",
-			"match": "\\b(?:def|builtin|meta|false|true|refl)\\b"
-		},
-		{
-			"name": "string.quoted.double.mce",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.mce",
-					"match": "\\\\."
-				}
-			]
-		},
-		{
-			"match": "\\[([bil]);",
-			"captures": {
-				"1": {
-					"name": "support.type.mce"
-				}
-			}
-		},
-		{
-			"match": "([-+]?(?:0|[1-9][0-9]*))([bsl]?)",
-			"captures": {
-				"1": {
-					"name": "constant.numeric.mce"
-				},
-				"2": {
-					"name": "support.type.mce"
-				}
-			}
-		},
-		{
-			"match": "([-+]?(?:[0-9]+[.]?|[0-9]*[.][0-9]+)(?:e[-+]?[0-9]+)?)([fd]?)",
-			"captures": {
-				"1": {
-					"name": "constant.numeric.mce"
-				},
-				"2": {
-					"name": "support.type.mce"
-				}
-			}
-		}
-	],
-	"scopeName": "source.mce"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "mce",
+    "patterns": [
+        {
+            "name": "keyword.operator.mce",
+            "match": "[#*≔⇒→≥≤:_?∈&λ@`$=]"
+        },
+        {
+            "name": "keyword.control.mce",
+            "match": "\\b(?:import|export|let|match)\\b"
+        },
+        {
+            "name": "support.type.mce",
+            "match": "\\b(?:union|end|intersection|any|byte_array|int_array|long_array|bool|byte|short|int|long|float|double|string|list|compound|box|ref|fun|code|type)\\b"
+        },
+        {
+            "name": "keyword.mce",
+            "match": "\\b(?:def|builtin|meta|false|true|refl)\\b"
+        },
+        {
+            "name": "string.quoted.double.mce",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.mce",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        {
+            "match": "\\[([bil]);",
+            "captures": {
+                "1": {
+                    "name": "support.type.mce"
+                }
+            }
+        },
+        {
+            "match": "([-+]?(?:0|[1-9][0-9]*))([bsl]?)",
+            "captures": {
+                "1": {
+                    "name": "constant.numeric.mce"
+                },
+                "2": {
+                    "name": "support.type.mce"
+                }
+            }
+        },
+        {
+            "match": "([-+]?(?:[0-9]+[.]?|[0-9]*[.][0-9]+)(?:e[-+]?[0-9]+)?)([fd]?)",
+            "captures": {
+                "1": {
+                    "name": "constant.numeric.mce"
+                },
+                "2": {
+                    "name": "support.type.mce"
+                }
+            }
+        },
+        {
+            "name": "variable.mce",
+            "match": "\\b([^\\s]+)\\b"
+        }
+    ],
+    "scopeName": "source.mce"
 }
