@@ -16,7 +16,7 @@
         },
         {
             "name": "keyword.mce",
-            "match": "\\b(?:def|builtin|meta|false|true|refl)\\b"
+            "match": "\\b(?:def|module|builtin|meta|false|true|refl)\\b"
         },
         {
             "name": "string.quoted.double.mce",
