@@ -8,7 +8,7 @@
         },
         {
             "name": "keyword.control.mce",
-            "match": "\\b(?:import|export|let|match)\\b"
+            "match": "\\b(?:let|match)\\b"
         },
         {
             "name": "support.type.mce",
@@ -16,7 +16,7 @@
         },
         {
             "name": "keyword.mce",
-            "match": "\\b(?:def|test|mod|sig|builtin|meta|false|true|refl)\\b"
+            "match": "\\b(?:import|export|def|test|mod|sig|builtin|meta|false|true|refl)\\b"
         },
         {
             "name": "string.quoted.double.mce",
