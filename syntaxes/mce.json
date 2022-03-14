@@ -60,6 +60,10 @@
             }
         },
         {
+            "name": "entity.name.function.mce",
+            "match": "\\b([^\\s]+)\\s*(?=\\[)"
+        },
+        {
             "name": "variable.mce",
             "match": "\\b([^\\s]+)\\b"
         }
