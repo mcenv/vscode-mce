@@ -4,7 +4,7 @@
     "patterns": [
         {
             "name": "keyword.operator.mce",
-            "match": "[#*≔⇒→≥≤:_?∈&λ@`$=]"
+            "match": "[#*≔!⇒→≥≤:_?∈&λ@`$=]"
         },
         {
             "name": "keyword.control.mce",
@@ -12,7 +12,7 @@
         },
         {
             "name": "support.type.mce",
-            "match": "\\b(?:or|end|and|any|byte_array|int_array|long_array|unit|bool|byte|short|int|long|float|double|string|list|compound|box|ref|fun|code|type)\\b"
+            "match": "\\b(?:or|end|and|any|byte_array|int_array|long_array|unit|bool|byte|short|int|long|float|double|string|list|compound|box|ref|fun|code|type)(?!/)\\b"
         },
         {
             "name": "keyword.mce",
