@@ -8,7 +8,7 @@
         },
         {
             "name": "keyword.control.mce",
-            "match": "\\b(?:let|match)\\b"
+            "match": "\\b(?:block|let|match)\\b"
         },
         {
             "name": "support.type.mce",
